@@ -19,37 +19,39 @@ const config: QuartzConfig = {
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
-      theme: {
-        fontOrigin: "googleFonts",
-        cdnCaching: true,
-        typography: {
-          header: "Cinzel",        // font romano/fantasy per i titoli
-          body: "EB Garamond",     // serif elegante per il testo
-          code: "IBM Plex Mono",
-        },
-        colors: {
-          lightMode: {
-            light: "#1a1a2e",       // sfondo quasi nero con tinta viola
-            lightgray: "#2d2b55",   // viola scuro per card/bordi
-            gray: "#6b6a9e",        // viola medio
-            darkgray: "#c9b8e8",    // viola chiaro per testo secondario
-            dark: "#f0e6c8",        // oro pallido per testo principale
-            secondary: "#c9a227",   // oro per link e accenti
-            tertiary: "#8b5cf6",    // viola brillante per hover
-            highlight: "rgba(201, 162, 39, 0.15)", // glow oro
-          },
-          darkMode: {
-            light: "#0f0f1a",       // sfondo ancora più scuro
-            lightgray: "#1e1b3a",
-            gray: "#4a4880",
-            darkgray: "#b8a8d8",
-            dark: "#f0e6c8",
-            secondary: "#c9a227",
-            tertiary: "#8b5cf6",
-            highlight: "rgba(201, 162, 39, 0.15)",
-          }
-        }
+    theme: {
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
+      typography: {
+        header: "Schibsted Grotesk",
+        body: "Source Sans Pro",
+        code: "IBM Plex Mono",
       },
+      colors: {
+        lightMode: {
+          light: "#faf8f8",
+          lightgray: "#e5e5e5",
+          gray: "#b8b8b8",
+          darkgray: "#4e4e4e",
+          dark: "#2b2b2b",
+          secondary: "#284b63",
+          tertiary: "#84a59d",
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#fff23688",
+        },
+        darkMode: {
+          light: "#161618",
+          lightgray: "#393639",
+          gray: "#646464",
+          darkgray: "#d4d4d4",
+          dark: "#ebebec",
+          secondary: "#7b97aa",
+          tertiary: "#84a59d",
+          highlight: "rgba(143, 159, 169, 0.15)",
+          textHighlight: "#b3aa0288",
+        },
+      },
+    },
   },
   plugins: {
     transformers: [
